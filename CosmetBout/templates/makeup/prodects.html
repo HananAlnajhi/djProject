@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row" style="margin: 120px 0;">
+    <div class="col-lg-2"></div>
+    {% for i in Prodi  %}
+
+    <div class="col-lg-2">
+        <div class="cover">
+            <img src="{{i.imges}}" width="200"  height="200"  />
+            <h5>{{i.name}}</h5>
+            <p>{{i.descreption}}</p>
+            <p>{{i.kind}}</p>
+            <p>{{i.expir_date}}</p>
+            <p>{{i.price}}</p>
+            <h5>{{i.brand}}</h5>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="col-lg-2"></div>
+
+</div>
+{% endblock content %}

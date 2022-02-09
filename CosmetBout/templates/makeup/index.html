@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="banner">
+    <img src="{% static 'images/bunner.jpg' %}" width="100%"  />
+</div>
+<div class="justDrop">
+    <div class="" style="align-content: center;">
+        <h1>Just Dropped</h1>
+         <hr class="hrDiv center">
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/1.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/2.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/3.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/4.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+
+    </div>
+</div>
+<div class="fastSell">
+    <h1>Fast Selling</h1>
+    <hr class="hrDiv center">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/5.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/6.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/7.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="cover">
+                <img src="{% static 'images/10.jpg' %}" width="200"  height="200"  />
+                <h5>Deborah Lippmann</h5>
+                <p>Mini Barrier+ Triple Lipid-Peptide Face Cream</p>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+
+    </div>
+</div>
+<div class="brands">
+    <h1>Best Brands</h1>
+    <hr class="hrDiv center">
+    <div class="row">
+        
+        <marquee behavior="scroll" direction="left" scrollamount="6" id="example5">
+            {% for i in brandi  %}
+                <img src="{{i.imges}}"  class="brandimg"  />
+            {% endfor %}
+            
+        </marquee>
+
+    </div>
+</div>
+{% endblock content %}

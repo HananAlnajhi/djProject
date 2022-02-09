@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row" style="margin: 220px 100px;">
+
+    {% for i in brandi  %}
+
+    <div class="col-lg-2" >
+        <div class="cover" style="border: 1px solid #ccc; padding: 10px; border-radius: 10px;">
+            <img src="{{i.imges}}" width="200"  height="200"  />
+            <h5>{{i.name}}</h5>
+            <p>{{i.orgin}}</p>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="col-lg-2"></div>
+
+</div>
+{% endblock content %}
