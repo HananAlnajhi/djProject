@@ -1,0 +1,144 @@
+
+@font-face {
+    font-family: 'cairo-bold';
+    src: url('../fonts/cairo-bold.ttf');
+}
+
+@font-face {
+    font-family: 'Cairo-Regular';
+    src: url('../fonts/Cairo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'GEMedium';
+    src: url('../fonts/GEMedium.otf');
+}
+
+html,body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container{
+    height: 100%;
+    align-content: center;
+
+}
+.OutCont{
+    background: rgba(255,255,255,0.8); 
+}
+
+.card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(255,255,255,0.8) !important;
+    /*border: #ccccff solid 1px;*/
+}
+
+.imgLogo {
+    width: 100px;
+    height:100px;
+    margin: 5px;
+}
+.outimg{
+    
+    margin-top: -70px;
+    border-radius: 100px;
+    
+}
+.social_icon span{
+    font-size: 45px;
+    margin-left:5px;
+
+}
+.facebook{
+    color: #003399;
+}
+.twitter{
+    color: #007bff;
+}
+.gmail{
+    color: #00376f;
+}
+.social_icon span:hover{
+    color: white;
+    cursor: pointer;
+}
+.card-header{
+    text-align: right;
+}
+.card-header h3{
+    font-family: GEMedium;
+    font-size: 13px;
+    margin: 5px;
+    line-height: 16px;
+}
+.title{
+    color: #753034;
+}
+.title1{
+    font-size: 30px;
+    color: #00376f;
+}
+.social_icon{
+    position: absolute;
+    margin-top: -40px;
+}
+
+.input-group-prepend span{
+    width: 40px;
+    margin-top: 7px;
+    background-color: #00376f;
+    color: #fff;
+    font-size: 18px;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+.card-body{
+    padding: 10px;
+}
+input{
+    font-size: 18px;
+    margin: 0;
+    margin-top: 7px;
+    margin-right: 20px;
+
+}
+.divbtn{
+    align-content: center;
+    text-align: center;
+}
+.login_btn{
+
+    color: #fff;
+    background-color: #753034 ;
+    font-family: GEMedium;
+    font-size: 16px;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.login_btn:hover{
+    color: #fff;
+    background-color: #00376f;
+}
+
+.links{
+    color: #c6868a;
+    font-weight: bold;
+}
+
+.links a{
+    margin-left: 4px;
+    color: #00376f;
+    font-weight: bold;
+}

@@ -1,0 +1,58 @@
+<html>
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=0.65, user-scalable=1" name="viewport">
+        <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'css/fontawesome.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="{% static 'css/login_style.css' %}" rel="stylesheet" type="text/css" media="screen">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <title></title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            
+                            
+                        </div>
+
+                        
+
+                        
+                    </div>
+                    <div class="card-body">
+                        <div class="row col-lg-12">
+
+                            <h3 class="title1 ">Sing In </h3>
+                            <hr>
+                        </div>
+                        <form class="form-horizontal"  method="POST" action="" > 
+                            {% csrf_token %}
+                            {% for field in form %}
+                            <div class = "form-group has-feedback " >
+                                {{field}}
+                            </div>
+                            {% endfor %}
+                            <div class="form-group divbtn">
+                                <input type="submit" value="Login" class=" btn float-right login_btn"  >
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            <h5 class=""> ©  copy right</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

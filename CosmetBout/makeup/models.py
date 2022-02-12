@@ -5,6 +5,7 @@ from unicodedata import name
 from django.db import models
 from datetime import datetime
 
+
 # Create your models here.
 class Brand(models.Model):
     """
@@ -38,7 +39,4 @@ class Products(models.Model):
 
     
 
-class Users(models.Model):
-    username = models.CharField(max_length=50)
-    password = models.CharField(max_length=50 )
 

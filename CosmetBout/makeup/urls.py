@@ -12,4 +12,7 @@ urlpatterns = [
     path('cpanel/',views.cpanel, name='cpanel'),
     path('addbrand/',views.addbrand, name='addbrand'),
     path('addprodect/',views.addprodect, name='addprodect'),
+    path('login/',views.login, name='login'),
+    path('singin/',views.singin, name='singin'),
+    path('logout/',views.logout, name='logout'),
 ]
